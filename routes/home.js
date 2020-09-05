@@ -1,9 +1,32 @@
 const express = require('express');
 const router = express.Router();
 const data = require('../data');
+const artworksData = data.artworks;
 
 router.get('/', async (req, res) => {
-  res.render('home/home', { title: 'Artfolio, share your art portfolio with the world!' });
+  const sections = [
+    {
+      title: 'New artworks',
+      artworks: await artworksData.getRecentlyAddedArtworks(),
+    },
+    {
+      title: 'Most liked artworks',
+      artworks: await artworksData.getMostLikedArtworks(),
+    },
+    {
+      title: 'Most viewed artworks',
+      artworks: await artworksData.getArtworksByViews(),
+    },
+    {
+      title: 'Recently visited artworks',
+      artworks: await artworksData.getRecentlyVisitedArtworks(),
+    },
+  ];
+
+  res.render('home/home', {
+    title: 'Artfolio, share your art portfolio with the world!',
+    sections,
+  });
 });
 
 module.exports = router;

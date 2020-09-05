@@ -1,0 +1,108 @@
+.edit-profile {
+  max-width: 400px;
+  text-align: left;
+}
+
+.full-width-input {
+  max-width: 300px;
+  display: block;
+  min-height: 1em;
+  margin: 10px 0;
+  width: 100%;
+}
+
+body {
+  background-color: silver;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.avatar-lg {
+  width: 64px;
+  height: 64px;
+}
+
+.error {
+  color: #a94442;
+}
+
+.carousel-main-image {
+  max-height: 300px;
+}
+
+.btn-success {
+  color: #ffffff !important;
+  background-color: #008a00 !important;
+}
+
+.btn-outline-success {
+  border-color: #008600 !important;
+  background-color: #f8f9fa !important;
+  color: #008600 !important;
+}
+
+.btn-outline-success.hover {
+  background-color: #008600 !important;
+  color: #f8f9fa !important;
+}
+
+.nav-link {
+  color: #707171 !important;
+}
+
+.text-primary {
+  color: #a30000 !important;
+}
+
+.sr-only {
+  color: #8f2d00 !important;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.btn-primary {
+  background-color: #0072ee !important;
+}
+
+.btn-outline-primary {
+  color: #006ee5 !important;
+  background-color: #f7f7f7 !important;
+}
+
+.register-login-link {
+  color: #0072ee;
+}
+
+.username-link {
+  color: #004ca2 !important;
+}
+
+.card-header h1 {
+  font-size: 1.5em;
+}
+
+.login-success-link {
+  color: #0064d2;
+}
+
+.error-page-link {
+  color: #005fc8;
+}

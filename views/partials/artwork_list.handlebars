@@ -1,0 +1,13 @@
+<div id="gallery" class="row mt-5">
+    {{#each artworks}}
+        {{> artwork_icon}}
+    {{else}}
+            <div class="alert alert-warning mx-auto" role="alert">
+        {{#if emptyMessage}}
+            {{emptyMessage}}
+        {{else}}
+            No artworks to show.
+        {{/if}}
+            </div>
+    {{/each}}
+</div>
